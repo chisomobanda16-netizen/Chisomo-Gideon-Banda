@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Cuts - Chisomo Gideon Banda</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-bold.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Creative Space</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="index.html#clients" class="nav-link">Clients</a></li>
+                <li><a href="index.html#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Final Cuts Section -->
+    <section id="final-cuts" class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Final Cuts</h2>
+                <p class="section-subtitle">Explore my completed video projects and final productions</p>
+            </div>
+            
+            <div class="final-cuts-grid">
+                <div class="final-cut-item">
+                    <div class="final-cut-thumbnail">
+                        <img src="Hero/Hero.jpg" alt="Visual Storytelling Project">
+                        <div class="final-cut-overlay">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="final-cut-info">
+                        <h3>Visual Storytelling Project</h3>
+                        <p>Compelling narratives through visual media</p>
+                        <a href="https://www.youtube.com/watch?v=your-video-id-1" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                    </div>
+                </div>
+                
+                <div class="final-cut-item">
+                    <div class="final-cut-thumbnail">
+                        <img src="Corporate Photograhy/_IM57053.jpg" alt="Corporate Photography">
+                        <div class="final-cut-overlay">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="final-cut-info">
+                        <h3>Corporate Photography</h3>
+                        <p>Professional corporate visual content</p>
+                        <a href="https://www.youtube.com/watch?v=your-video-id-2" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                    </div>
+                </div>
+                
+                <div class="final-cut-item">
+                    <div class="final-cut-thumbnail">
+                        <img src="Corporate Photograhy/_IM57058.jpg" alt="Media Production">
+                        <div class="final-cut-overlay">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="final-cut-info">
+                        <h3>Media Production</h3>
+                        <p>High-quality video production services</p>
+                        <a href="https://www.youtube.com/watch?v=your-video-id-3" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                    </div>
+                </div>
+                
+                <div class="final-cut-item">
+                    <div class="final-cut-thumbnail">
+                        <img src="Hero/Profile Picture.jpg" alt="Graphic Design">
+                        <div class="final-cut-overlay">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="final-cut-info">
+                        <h3>Graphic Design</h3>
+                        <p>Creative visual design solutions</p>
+                        <a href="https://www.youtube.com/watch?v=your-video-id-4" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                    </div>
+                </div>
+                
+                <div class="final-cut-item">
+                    <div class="final-cut-thumbnail">
+                        <img src="Corporate Photograhy/_IM57067.jpg" alt="Documentary Work">
+                        <div class="final-cut-overlay">
+                            <div class="play-icon">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="final-cut-info">
+                        <h3>Documentary Work</h3>
+                        <p>Documentary filmmaking and storytelling</p>
+                        <a href="https://www.youtube.com/watch?v=your-video-id-5" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="back-to-portfolio">
+                <a href="portfolio-detail.html" class="btn btn-secondary">← Back to Project Details</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Chisomo Gideon Banda</h3>
+                    <p>Your creative visual storytelling partner</p>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Chisomo Gideon Banda. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-bold.js"></script>
+    <script>
+        // Final cuts page functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add click handlers to final cut items
+            document.querySelectorAll('.final-cut-item').forEach(item => {
+                item.addEventListener('click', function(e) {
+                    if (!e.target.classList.contains('btn')) {
+                        const youtubeLink = this.querySelector('.btn-primary').getAttribute('href');
+                        window.open(youtubeLink, '_blank');
+                    }
+                });
+            });
+            
+            // Add hover effects
+            document.querySelectorAll('.final-cut-item').forEach(item => {
+                item.addEventListener('mouseenter', function() {
+                    this.querySelector('.final-cut-overlay').style.opacity = '1';
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    this.querySelector('.final-cut-overlay').style.opacity = '0';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
