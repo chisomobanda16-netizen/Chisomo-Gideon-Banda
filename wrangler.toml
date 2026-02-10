@@ -9,6 +9,7 @@ publish = ""
 from = "/*"
 to = "/index.html"
 status = 200
+exclude = "/*.{jpg,jpeg,png,gif,svg,css,js,ico}"
 
 [env.production.vars]
 ENVIRONMENT = "production"
