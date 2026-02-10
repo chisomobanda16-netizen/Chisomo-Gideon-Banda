@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloudflare Image Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        img { max-width: 300px; height: auto; margin: 10px; border: 1px solid #ccc; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Cloudflare Image Loading Test</h1>
+    
+    <div class="test-section">
+        <h2>Test 1: Hero Image (Original Path)</h2>
+        <img src="Hero/Profile.jpg" alt="Hero Profile Test">
+        <p>Path: Hero/Profile.jpg</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 2: Hero Image (URL Encoded)</h2>
+        <img src="Hero/Profile.jpg" alt="Hero Profile Encoded">
+        <p>Path: Hero/Profile.jpg (same as above)</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 3: Photo Storytelling</h2>
+        <img src="Photo%20Storytelling/Photo%20storytelling.jpg" alt="Photo Storytelling Encoded">
+        <p>Path: Photo%20Storytelling/Photo%20storytelling.jpg (URL encoded)</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 4: Corporate Event Coverage</h2>
+        <img src="Corporate%20Event%20%20Coverage/Corporate%20Event%20Coverage.jpg" alt="Corporate Event Encoded">
+        <p>Path: Corporate%20Event%20%20Coverage/Corporate%20Event%20Coverage.jpg (URL encoded)</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 5: Storytelling Sessions</h2>
+        <img src="Storytelling%20and%20Co-creation/Storytelling%20and%20Co-creation%20sessions.jpg" alt="Storytelling Encoded">
+        <p>Path: Storytelling%20and%20Co-creation/Storytelling%20and%20Co-creation%20sessions.jpg (URL encoded)</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Test 6: Hero Portfolio Image</h2>
+        <img src="Hero/Hero.jpg" alt="Hero Portfolio Test">
+        <p>Path: Hero/Hero.jpg</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>Debug Information</h2>
+        <p>Check browser console for any 404 errors or loading issues.</p>
+        <p>Right-click on images and select "Inspect" to see if they load properly.</p>
+    </div>
+    
+</body>
+</html>
