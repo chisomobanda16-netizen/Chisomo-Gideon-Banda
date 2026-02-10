@@ -111,6 +111,16 @@ document.addEventListener('DOMContentLoaded', function() {
         item.style.cursor = 'pointer';
         
         item.addEventListener('click', function(e) {
+            const clickedLink = e.target.closest('a');
+            if (clickedLink) {
+                return;
+            }
+
+            const itemLink = item.querySelector('a');
+            if (itemLink && itemLink.getAttribute('href')) {
+                return;
+            }
+
             e.preventDefault();
             e.stopPropagation();
             
