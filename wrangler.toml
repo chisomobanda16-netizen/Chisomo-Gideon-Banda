@@ -1,0 +1,14 @@
+name = "chisomo-gideon-banda"
+compatibility_date = "2024-02-10"
+
+[build]
+command = ""
+publish = ""
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+[env.production.vars]
+ENVIRONMENT = "production"
