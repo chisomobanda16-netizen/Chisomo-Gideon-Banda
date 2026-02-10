@@ -7,11 +7,5 @@ publish = "."
 
 pages_build_output_dir = "portfolio-cloudflare-correct"
 
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
-exclude = "/*.{html,jpg,jpeg,png,gif,svg,css,js,ico}"
-
 [env.production.vars]
 ENVIRONMENT = "production"
